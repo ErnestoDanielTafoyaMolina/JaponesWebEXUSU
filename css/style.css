@@ -1,0 +1,139 @@
+* {
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .fcc-btn {
+    background-color:red;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .fcc-btn:hover {
+    background-color: #223094;
+  }
+  
+  body {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(198,73,73,1) 50%, rgba(255,255,255,1) 100%);
+  }
+  
+  header {
+   
+    clear: both;
+    content:'';
+    width: 100vw;
+    font-family:monospace;
+
+  }
+  
+  .menu {
+    text-align: center;
+
+  }
+  
+  img {
+    width: 120px;
+    height: 50px;
+    float: left;
+    padding: 8px;
+  
+  }
+  
+  nav {
+    grid-template-columns: repeat(2,1fr);
+  }
+  nav ul {
+    
+    grid-column: 2 / 2;
+    grid-row: 1;
+  }
+  nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    padding: 12px 0;
+    float: left;
+    position: relative;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+  }
+  
+  nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top:0;
+    position: absolute;
+    transition: width 0.2s;
+  }
+  
+  nav ul li a:hover::before {
+    width: 100%;
+  }
+
+  .tarjeta{
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+width:420px;
+border: 1px solid lightgray;
+box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+border-radius:15px;
+font-family:monospace;
+}
+.titulo{
+font-size: 24px;
+padding: 10px 10px 0 10px;;
+}
+.cuerpo{
+padding: 10px;
+}
+.pie{
+background: #6699ff;
+border-radius:0 0 15px 15px;
+padding: 10px;
+text-align:center;
+}
+.pie a{
+text-decoration: none;
+color: white;
+}
+.pie a:after {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 1;
+content: ""
+}
+
+.card-img-top{
+    height: 30%;
+}
+
+.footer{
+  background-color: #444;
+  float: left;
+  padding:20px;
+  text-align: center;
+  margin-top: 20px;
+  width: 100vw;
+}
+.navlogo, img{
+  width: 200px;
+  height:100px;
+  grid-column: 1/2;
+  grid-row: 1;
+}
